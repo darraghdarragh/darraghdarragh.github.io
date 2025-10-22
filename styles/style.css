@@ -1,49 +1,214 @@
+/*
+style.css
+Darragh Morrissey
+Updated: 16.10.2025
+*/
 
-body{
-	margin:0px;
-	font-family:Helvetica;
-	color:white;
-	background:#8e44ad;	
-	line-height:1.5;
+/* -------------------------
+   Global Styles
+------------------------- */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f6f8fa;
+  color: #2c2c2c;
+  line-height: 1.6;
 }
-#header, #main, #footer{
-	display:flex;
+
+/* Layout container for sidebar + main content */
+.cv-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  gap: 20px;
 }
-#header{
-	background:#8e44ad;
-	font-size:200%;
+
+/* -------------------------
+   Sidebar
+------------------------- */
+.sidebar {
+  flex: 0 0 260px;
+  background: #0d1b2a;
+  color: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  height: fit-content;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
-#main{
-	min-height:600px;
-	background:#9b59b6;
-	font-size:150%;
+
+/* Profile image */
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 15px auto;
+  border: 3px solid #d4af37;
 }
-#header1{
-	flex:2;	
-	text-align:center;	
+
+/* Name and subtitle */
+.sidebar h1 {
+  font-size: 1.8em;
+  margin-bottom: 5px;
+  color: #d4af37;
+  text-align: center;
 }
-.link,.foot{
-	flex:3;
-	text-align:center;	
+
+.subtitle {
+  font-size: 0.9em;
+  color: #ccc;
+  margin-bottom: 20px;
+  text-align: center;
 }
-#header2{
-	display:flex;
-	flex:10;	
-	align-items:center;
+
+/* Section headings in sidebar */
+.sidebar h3 {
+  color: #d4af37;
+  border-bottom: 1px solid #d4af37;
+  padding-bottom: 5px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.1em;
 }
-#sidebar{
-	flex:2;
-	padding:5%;
+
+/* Sidebar links */
+.sidebar a {
+  color: #d4af37;
+  text-decoration: none;
 }
-#content{
-	flex:10;
-	padding:5%;
+
+.sidebar a:hover {
+  text-decoration: underline;
 }
-a{
-	color:white;
+
+/* Sidebar lists */
+.sidebar ul {
+  list-style: none;
+  padding-left: 0;
 }
-input,textarea{
-	font-size:50pt;
-	width:100%;
-	height:100px;
+
+.sidebar ul li {
+  padding: 5px 0;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
+}
+
+/* -------------------------
+   Main Content
+------------------------- */
+.main-content {
+  flex: 1;
+}
+
+.section {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+  color: #1b263b;
+  border-bottom: 2px solid #d4af37;
+  display: inline-block;
+  margin-bottom: 15px;
+  padding-bottom: 3px;
+}
+
+/* Paragraph spacing */
+.section p {
+  margin-bottom: 10px;
+}
+
+/* Unordered lists inside main content */
+.section ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  padding-left: 10px;
+}
+
+/* Links between pages */
+.main-content a {
+  display: inline-block;
+  margin-top: 15px;
+  color: #1b263b;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.main-content a:hover {
+  color: #d4af37;
+}
+
+/* -------------------------
+   Skills Section
+------------------------- */
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.skill-column {
+  flex: 1;
+}
+
+.skill-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-column li {
+  background: #f6f8fa;
+  margin: 6px 0;
+  padding: 6px 10px;
+  border-radius: 8px;
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+/* -------------------------
+   Responsive Design
+------------------------- */
+@media (max-width: 900px) {
+  .cv-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar {
+    width: 100%;
+    text-align: center;
+  }
+
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill-column {
+    width: 100%;
+  }
+
+  .profile-img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* -------------------------
+   Extra Styling 
+------------------------- */
+
+/* Add subtle animation to hover links */
+a:hover {
+  transition: color 0.2s ease-in-out;
+}
+
+/* Consistent font sizes */
+h1, h2, h3 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
