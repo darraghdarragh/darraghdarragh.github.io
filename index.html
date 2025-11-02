@@ -1,0 +1,191 @@
+<!--
+index.html
+Bootstrap CV + Components - Darragh Morrissey
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV - Darragh Morrissey</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <!-- Custom Styles -->
+  <link href="styles/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Darragh Morrissey</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-5">
+    <div class="row g-4">
+      
+      <!-- Sidebar -->
+      <aside class="col-md-4 bg-white p-4 shadow rounded text-center">
+        <img src="images/darragh.jpg" alt="Darragh Morrissey" class="img-fluid rounded-circle mb-3 profile-img">
+        <h2 class="fw-bold mb-1">Darragh Morrissey</h2>
+        <p class="text-muted mb-4">Software Engineer | AI & ML Enthusiast | Student</p>
+
+        <!-- Contact Info -->
+        <div class="text-start contact-info">
+          <h5 class="fw-semibold mb-3 text-center">Contact</h5>
+          <ul class="list-unstyled small">
+            <li>
+              <div class="icon-circle bg-danger-subtle text-danger"><i class="bi bi-geo-alt-fill"></i></div>
+              <span>Leixlip, Co. Kildare</span>
+            </li>
+            <li>
+              <div class="icon-circle bg-primary-subtle text-primary"><i class="bi bi-telephone-fill"></i></div>
+              <span>0873627735</span>
+            </li>
+            <li>
+              <div class="icon-circle bg-info-subtle text-info"><i class="bi bi-envelope-fill"></i></div>
+              <a href="mailto:darragh_morrissey@hotmail.com">Email</a>
+            </li>
+            <li>
+              <div class="icon-circle bg-primary-subtle text-primary"><i class="bi bi-linkedin"></i></div>
+              <a href="https://www.linkedin.com/in/darragh-morrissey-71315724a" target="_blank">LinkedIn</a>
+            </li>
+            <li>
+              <div class="icon-circle bg-dark-subtle text-dark"><i class="bi bi-github"></i></div>
+              <a href="https://github.com/darraghdarragh" target="_blank">GitHub</a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Main Section -->
+      <main class="col-md-8 bg-white p-4 shadow rounded">
+        <!-- Carousel -->
+        <div id="portfolioCarousel" class="carousel slide mb-4" data-bs-ride="carousel" data-bs-interval="5000" data-bs-pause="hover">
+          <div class="carousel-inner rounded">
+            <div class="carousel-item active">
+              <img src="images/slide1.jpg" class="d-block w-100" alt="Slide 1 - Coding Project">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>DarraghOps Project</h5>
+                <p>Full-stack task management system using Django & React.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/slide2.jpg" class="d-block w-100" alt="Slide 2 - AI Research">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>AI & Machine Learning</h5>
+                <p>Exploring intelligent systems and automation in modern computing.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/slide3.jpg" class="d-block w-100" alt="Slide 3 - Web Design">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Web Design Projects</h5>
+                <p>Creating responsive and elegant sites for local businesses.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+
+        <!-- Cover Letter -->
+        <section class="mb-5">
+          <h3 class="fw-bold mb-3">Cover Letter</h3>
+          <p>Dear Hiring Manager,</p>
+          <p>
+            I am writing to express my interest in a Software Engineer or Technical Consultant position.
+            With a background in Computer Science and practical experience in RESTful APIs, AWS integration, and full-stack development,
+            I am confident I can make a meaningful contribution to your team.
+          </p>
+          <p>
+            My work at Taoglas as a Software Engineer Intern gave me valuable insight into real-world
+            software design, collaboration, and testing. I’m currently pursuing a Higher Diploma in Computing (AI & ML) at NCI.
+          </p>
+          <p>Kind regards,<br><strong>Darragh Morrissey</strong></p>
+        </section>
+
+        <!-- Accordion -->
+        <section>
+          <h3 class="fw-bold mb-3">More About Me</h3>
+          <div class="accordion" id="cvAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="aboutHeading">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#aboutCollapse" aria-expanded="true">
+                  About Me
+                </button>
+              </h2>
+              <div id="aboutCollapse" class="accordion-collapse collapse show" data-bs-parent="#cvAccordion">
+                <div class="accordion-body">
+                  Passionate about software development, AI, and building solutions that improve user experience.
+                  I thrive on problem-solving and continuous learning.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="educationHeading">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#educationCollapse">
+                  Education
+                </button>
+              </h2>
+              <div id="educationCollapse" class="accordion-collapse collapse" data-bs-parent="#cvAccordion">
+                <div class="accordion-body">
+                  <strong>National College of Ireland:</strong> Higher Diploma in Computing (AI & ML).<br>
+                  <strong>Maynooth University:</strong> BA in Computer Science & Business Marketing.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="projectHeading">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#projectCollapse">
+                  Projects
+                </button>
+              </h2>
+              <div id="projectCollapse" class="accordion-collapse collapse" data-bs-parent="#cvAccordion">
+                <div class="accordion-body">
+                  <ul>
+                    <li><strong>DarraghOps:</strong> Full-stack task management app with AWS S3 integration.</li>
+                    <li><strong>DM Web Solutions:</strong> Responsive websites for local businesses in Kildare.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center text-muted py-3 mt-5">
+    © 2025 Darragh Morrissey · Built with Bootstrap 5
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
