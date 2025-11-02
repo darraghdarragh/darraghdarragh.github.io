@@ -21,3 +21,9 @@ Main updates since the last version:
 
 LinkedIn: https://www.linkedin.com/in/darragh-morrissey-71315724a  
 GitHub: https://github.com/darraghdarragh
+
+------------------------------------------------------------
+LIVE LINK
+------------------------------------------------------------
+My Bootstrap CV is live here:
+https://darraghdarragh.github.io/
